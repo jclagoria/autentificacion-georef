@@ -1,0 +1,37 @@
+api:
+  georef:
+    urlService: https://apis.datos.gob.ar/georef/api
+    urlProvincias: /provincias
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /demo-app
+      settings:
+        trace: false
+        web-allow-others: false
+  datasource:
+    url: jdbc:h2:mem:gadget-db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: adminCart
+    password: 123456789
+    initialization-mode: always
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        use_sql_comments: true
+        format_sql: true
+
+# security
+jwt:
+  secret: secret
+  expiration: 36000
