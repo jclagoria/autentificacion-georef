@@ -51,3 +51,11 @@ La estructura que se debe tener en ese caso es la siguiente:
     "ROLE_USER"
   ]
 }
+
+#Servicio Geo Ref
+La api Publica que se usa para obtener los datos geograficos de una provincia recibe como parametros el nombre
+de la provincia, un ejemplo de que dato espera la API seria:
+ Santiago del Estero
+ Stgo. del Estero
+ S. del Estero
+ Sgo. del Estero
