@@ -21,6 +21,7 @@ Las tablas que se crean son las siguientes:
  - Rol
  - Usuario
 
+##Importante
 Al momento de iniciar la aplicacion se ingresan datos a la tabla Rol y al de Usuario.
 Los datos que se ingresan son
 ###Tabla Rol
